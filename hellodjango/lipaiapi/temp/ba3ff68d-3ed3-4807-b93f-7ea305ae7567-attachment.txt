@@ -1,0 +1,94 @@
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第1个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_card", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第2个接口: http://192.168.1.61/api/default_get
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_card", "fields": ["code", "displayName", "cardNo", "companyId", "customerId", "name", "allowMoreCharge", "customerAllowMoreCharge", "id", "status"], "context": {}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:78 模型：customer_card的默认填充字段信息为：{'allowMoreCharge': False, 'customerAllowMoreCharge': False, 'status': 0}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第3个接口: http://192.168.1.61/api/create
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_card", "map": {"allowMoreCharge": false, "customerAllowMoreCharge": false, "status": 0, "cardNo": "1568975633213", "name": "\u5145\u7535\u5361\u6d4b\u8bd5\u65b0\u589e", "code": "1568975633213"}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:35 新建：创建模型：customer_card新记录，id为：714
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第4个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_card", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第5个接口: http://192.168.1.61/api/read
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_card", "fields": ["code", "displayName", "cardNo", "companyId", "customerId", "name", "allowMoreCharge", "customerAllowMoreCharge", "id", "status"], "id": 714}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:41 查看：查看模型customer_card中id为：714的内容： {'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'code': '1568975633213', 'displayName': '1568975633213', 'name': '充电卡测试新增', 'allowMoreCharge': False, 'id': 714, 'cardNo': '1568975633213', 'status': 0}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第6个接口: http://192.168.1.61/api/write
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_card", "map": {"cardNo": "7138975633213", "name": "\u5145\u7535\u5361\u6d4b\u8bd5\u4fee\u6539", "code": "7138975633213"}, "id": 714}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:47 编辑：编辑模型customer_card中id为：714的记录已成功
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第7个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_card", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第8个接口: http://192.168.1.61/api/search_read
+[32mINFO    [0m root:key.py:22 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_card", "fields": ["code", "displayName", "cardNo", "companyId", "customerId", "name", "allowMoreCharge", "customerAllowMoreCharge", "id", "status"], "domain": [["name", "like", "\u5145\u7535\u5361\u6d4b\u8bd5\u4fee\u6539"]]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:84 快捷搜索：模型：customer_card快捷搜索条件按'name'搜索 '充电卡测试修改'符合的记录数是：1条
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第9个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_card", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第10个接口: http://192.168.1.61/api/search_read
+[32mINFO    [0m root:key.py:22 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_card", "fields": ["code", "displayName", "cardNo", "companyId", "customerId", "name", "allowMoreCharge", "customerAllowMoreCharge", "id", "status"], "domain": [["cardNo", "like", "7138975633213"]]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:84 快捷搜索：模型：customer_card快捷搜索条件按'cardNo'搜索 '7138975633213'符合的记录数是：1条
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第11个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_card", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第12个接口: http://192.168.1.61/api/search_read
+[32mINFO    [0m root:key.py:22 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_card", "fields": ["code", "displayName", "cardNo", "companyId", "customerId", "name", "allowMoreCharge", "customerAllowMoreCharge", "id", "status"], "domain": [["code", "like", "7138975633213"]]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:84 快捷搜索：模型：customer_card快捷搜索条件按'code'搜索 '7138975633213'符合的记录数是：1条
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第13个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_card", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第14个接口: http://192.168.1.61/api/search_read
+[32mINFO    [0m root:key.py:22 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_card", "fields": ["code", "displayName", "cardNo", "companyId", "customerId", "name", "allowMoreCharge", "customerAllowMoreCharge", "id", "status"], "domain": [["customerId.displayName", "like", "7138975633213"]]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:84 快捷搜索：模型：customer_card快捷搜索条件按'customerId.displayName'搜索 '7138975633213'符合的记录数是：0条
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第15个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_card", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第16个接口: http://192.168.1.61/api/read_group
+[32mINFO    [0m root:key.py:22 传的参数是：{"lazy": true, "orderBy": "", "simple": false, "limit": 20, "offset": 1, "model": "customer_card", "domain": [], "fields": ["code", "displayName", "cardNo", "companyId", "customerId", "name", "allowMoreCharge", "customerAllowMoreCharge", "id", "status"], "group": ["customerId"]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:93 分组：模型：customer_card按'customerId'分组，响应内容中的data为：{'records': [{'_domain': [['customerId', '=', 88]], '_total': 1, 'customerId': {'displayName': 'leo123', 'name': 'leo123', 'id': 88}}, {'_domain': [['customerId', '=', 47]], '_total': 1, 'customerId': {'displayName': 'leo888', 'name': 'leo888', 'id': 47}}, {'_domain': [['customerId', '=', 33]], '_total': 4, 'customerId': {'displayName': 'zhao_test', 'name': 'zhao_test', 'id': 33}}, {'_domain': [['customerId', '=', 36]], '_total': 10, 'customerId': {'displayName': '呦', 'name': '呦', 'id': 36}}, {'_domain': [['customerId', '=', 55]], '_total': 1, 'customerId': {'displayName': '内蒙古区域代理公司客户', 'name': '内蒙古区域代理公司客户', 'id': 55}}, {'_domain': [['customerId', '=', 86]], '_total': 1, 'customerId': {'displayName': '96999', 'name': '96999', 'id': 86}}, {'_domain': [['customerId', '=', 14]], '_total': 2, 'customerId': {'displayName': 'এ᭄ꦿ꯭萌寶এ᭄ꦿ🦋', 'name': 'এ᭄ꦿ꯭萌寶এ᭄ꦿ🦋', 'id': 14}}, {'_domain': [['customerId', '=', 9]], '_total': 13, 'customerId': {'displayName': '弘信', 'name': '弘信', 'id': 9}}, {'_domain': [['customerId', '=', 49]], '_total': 1, 'customerId': {'displayName': '8686', 'name': '8686', 'id': 49}}, {'_domain': [['customerId', '=', 28]], '_total': 1, 'customerId': {'displayName': 'yy', 'name': 'yy', 'id': 28}}, {'_domain': [['customerId', '=', 40]], '_total': 1, 'customerId': {'displayName': 'zhao_', 'name': 'zhao_', 'id': 40}}, {'_domain': [['customerId', '=', 7]], '_total': 3, 'customerId': {'displayName': '黄光洪', 'name': '黄光洪', 'id': 7}}, {'_domain': [['customerId', '=', 38]], '_total': 1, 'customerId': {'displayName': 'qwqee', 'name': 'qwqee', 'id': 38}}, {'_domain': [['customerId', '=', 30]], '_total': 2, 'customerId': {'displayName': 'Yccc', 'name': 'Yccc', 'id': 30}}, {'_domain': [['customerId', '=', 11]], '_total': 1, 'customerId': {'displayName': '陈建峰', 'name': '陈建峰', 'id': 11}}, {'_domain': [['customerId', '=', 8]], '_total': 1, 'customerId': {'displayName': '何莹亮', 'name': '何莹亮', 'id': 8}}, {'_domain': [['customerId', '=?', None]], '_total': 37, 'customerId': {}}], 'length': 17}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第17个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_card", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第18个接口: http://192.168.1.61/api/read_group
+[32mINFO    [0m root:key.py:22 传的参数是：{"lazy": true, "orderBy": "", "simple": false, "limit": 20, "offset": 1, "model": "customer_card", "domain": [], "fields": ["code", "displayName", "cardNo", "companyId", "customerId", "name", "allowMoreCharge", "customerAllowMoreCharge", "id", "status"], "group": ["allowMoreCharge"]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:93 分组：模型：customer_card按'allowMoreCharge'分组，响应内容中的data为：{'records': [{'_domain': [['allowMoreCharge', '=', True]], '_total': 6, 'allowMoreCharge': True}, {'_domain': [['allowMoreCharge', '=', False]], '_total': 75, 'allowMoreCharge': False}], 'length': 2}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第19个接口: http://192.168.1.61/api/unlink
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_card", "ids": [714]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:54 删除：已删除模型customer_card中id为：714的记录
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第20个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_card", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第21个接口: http://192.168.1.61/api/default_get
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_card", "fields": ["code", "displayName", "cardNo", "companyId", "customerId", "name", "allowMoreCharge", "customerAllowMoreCharge", "id", "status"], "context": {}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:78 模型：customer_card的默认填充字段信息为：{'allowMoreCharge': False, 'customerAllowMoreCharge': False, 'status': 0}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第22个接口: http://192.168.1.61/api/create
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_card", "map": {"allowMoreCharge": false, "customerAllowMoreCharge": false, "status": 0, "cardNo": "1568975633213", "name": "\u5145\u7535\u5361\u6d4b\u8bd5\u65b0\u589e", "code": "1568975633213"}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:35 新建：创建模型：customer_card新记录，id为：715
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第23个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_card", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第24个接口: http://192.168.1.61/api/default_get
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_card", "fields": ["code", "displayName", "cardNo", "companyId", "customerId", "name", "allowMoreCharge", "customerAllowMoreCharge", "id", "status"], "context": {}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:78 模型：customer_card的默认填充字段信息为：{'allowMoreCharge': False, 'customerAllowMoreCharge': False, 'status': 0}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第25个接口: http://192.168.1.61/api/create
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_card", "map": {"allowMoreCharge": false, "customerAllowMoreCharge": false, "status": 0, "cardNo": "7138975633213", "name": "\u5145\u7535\u5361\u6d4b\u8bd5\u4fee\u6539", "code": "7138975633213"}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:35 新建：创建模型：customer_card新记录，id为：716
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第26个接口: http://192.168.1.61/api/unlink
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_card", "ids": [715, 716]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:56 批量删除：已批量删除模型customer_card中id为：715, 716的记录

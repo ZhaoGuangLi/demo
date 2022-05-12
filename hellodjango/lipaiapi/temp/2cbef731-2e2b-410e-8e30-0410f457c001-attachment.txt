@@ -1,0 +1,139 @@
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第7个接口: http://192.168.1.61/api/onchange
+[32mINFO    [0m root:key.py:22 传的参数是：{"id": 1096, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea"}, "method": "pinyinOnchange"}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第8个接口: http://192.168.1.61/api/create
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:35 新建：创建模型：customer_car_brand新记录，id为：1097
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第1个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第2个接口: http://192.168.1.61/api/default_get
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:78 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第9个接口: http://192.168.1.61/api/name_get
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_brand", "id": 1097}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第3个接口: http://192.168.1.61/api/create
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {"displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 1097}, "name": "\u6c49EV"}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:35 新建：创建模型：customer_car_model新记录，id为：914
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第1个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第2个接口: http://192.168.1.61/api/default_get
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car", "fields": ["carModelBms", "carModelId", "displayName", "pictureUrl", "remark", "number", "companyId", "customerId", "name", "vin", "id"], "context": {}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:78 模型：customer_car的默认填充字段信息为：{'carModelBms': 0}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第4个接口: http://192.168.1.61/api/name_get
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_model", "id": 914}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第3个接口: http://192.168.1.61/api/create
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car", "map": {"carModelBms": 0, "carModelId": {"displayName": "\u6c49EV", "name": "\u6c49EV", "id": 914}, "customerId": {}, "number": "\u7ca4GF52UU", "remark": "\u7ca4GF52UU", "vin": "TEST0000000000135", "pictureUrl": "https://test3.gcevc.net/oss/customer_car/pictureUrl/1651051712594.png"}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:35 新建：创建模型：customer_car新记录，id为：744
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第4个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第5个接口: http://192.168.1.61/api/read
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car", "fields": ["carModelBms", "carModelId", "displayName", "pictureUrl", "remark", "number", "companyId", "customerId", "name", "vin", "id"], "id": 744}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:41 查看：查看模型customer_car中id为：744的内容： {'carModelBms': 0, 'number': '粤GF52UU', 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'carModelId': {'displayName': '汉EV', 'name': '汉EV', 'id': 914}, 'displayName': '粤GF52UU', 'pictureUrl': 'https://test3.gcevc.net/oss/customer_car/pictureUrl/1651051712594.png', 'remark': '粤GF52UU', 'vin': 'TEST0000000000135', 'id': 744}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第6个接口: http://192.168.1.61/api/write
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car", "map": {"number": "\u7ca4GF92UU", "remark": "\u7ca4GF92UU", "vin": "TEST0000000000235"}, "id": 744}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:47 编辑：编辑模型customer_car中id为：744的记录已成功
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第7个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第8个接口: http://192.168.1.61/api/search_read
+[32mINFO    [0m root:key.py:22 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_car", "fields": ["carModelBms", "carModelId", "displayName", "pictureUrl", "remark", "number", "companyId", "customerId", "name", "vin", "id"], "domain": [["number", "like", "\u7ca4GF92UU"]]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:84 快捷搜索：模型：customer_car快捷搜索条件按'number'搜索 '粤GF92UU'符合的记录数是：1条
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第9个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第10个接口: http://192.168.1.61/api/search_read
+[32mINFO    [0m root:key.py:22 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_car", "fields": ["carModelBms", "carModelId", "displayName", "pictureUrl", "remark", "number", "companyId", "customerId", "name", "vin", "id"], "domain": [["remark", "like", "\u7ca4GF92UU"]]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:84 快捷搜索：模型：customer_car快捷搜索条件按'remark'搜索 '粤GF92UU'符合的记录数是：1条
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第11个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第12个接口: http://192.168.1.61/api/search_read
+[32mINFO    [0m root:key.py:22 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_car", "fields": ["carModelBms", "carModelId", "displayName", "pictureUrl", "remark", "number", "companyId", "customerId", "name", "vin", "id"], "domain": [["vin", "like", "TEST0000000000235"]]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:84 快捷搜索：模型：customer_car快捷搜索条件按'vin'搜索 'TEST0000000000235'符合的记录数是：1条
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第13个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第14个接口: http://192.168.1.61/api/search_read
+[32mINFO    [0m root:key.py:22 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_car", "fields": ["carModelBms", "carModelId", "displayName", "pictureUrl", "remark", "number", "companyId", "customerId", "name", "vin", "id"], "domain": [["carModelId.displayName", "like", "\u6c49EV"]]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:84 快捷搜索：模型：customer_car快捷搜索条件按'carModelId.displayName'搜索 '汉EV'符合的记录数是：1条
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第15个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第16个接口: http://192.168.1.61/api/search_read
+[32mINFO    [0m root:key.py:22 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_car", "fields": ["carModelBms", "carModelId", "displayName", "pictureUrl", "remark", "number", "companyId", "customerId", "name", "vin", "id"], "domain": [["customerId.displayName", "like", "zhao_test"]]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:84 快捷搜索：模型：customer_car快捷搜索条件按'customerId.displayName'搜索 'zhao_test'符合的记录数是：1条
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第17个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第18个接口: http://192.168.1.61/api/read_group
+[32mINFO    [0m root:key.py:22 传的参数是：{"lazy": true, "orderBy": "", "simple": false, "limit": 20, "offset": 1, "model": "customer_car", "domain": [], "fields": ["carModelBms", "carModelId", "displayName", "pictureUrl", "remark", "number", "companyId", "customerId", "name", "vin", "id"], "group": ["customerId"]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:93 分组：模型：customer_car按'customerId'分组，响应内容中的data为：{'records': [{'_domain': [['customerId', '=', 50]], '_total': 1, 'customerId': {'displayName': '恺容', 'name': '恺容', 'id': 50}}, {'_domain': [['customerId', '=', 88]], '_total': 1, 'customerId': {'displayName': 'leo123', 'name': 'leo123', 'id': 88}}, {'_domain': [['customerId', '=', 36]], '_total': 21, 'customerId': {'displayName': '呦', 'name': '呦', 'id': 36}}, {'_domain': [['customerId', '=', 9]], '_total': 1, 'customerId': {'displayName': '弘信', 'name': '弘信', 'id': 9}}, {'_domain': [['customerId', '=', 59]], '_total': 1, 'customerId': {'displayName': '交易明细', 'name': '交易明细', 'id': 59}}, {'_domain': [['customerId', '=?', None]], '_total': 7, 'customerId': {}}, {'_domain': [['customerId', '=', 40]], '_total': 1, 'customerId': {'displayName': 'zhao_', 'name': 'zhao_', 'id': 40}}, {'_domain': [['customerId', '=', 14]], '_total': 9, 'customerId': {'displayName': 'এ᭄ꦿ꯭萌寶এ᭄ꦿ🦋', 'name': 'এ᭄ꦿ꯭萌寶এ᭄ꦿ🦋', 'id': 14}}, {'_domain': [['customerId', '=', 33]], '_total': 1, 'customerId': {'displayName': 'zhao_test', 'name': 'zhao_test', 'id': 33}}, {'_domain': [['customerId', '=', 30]], '_total': 2, 'customerId': {'displayName': 'Yccc', 'name': 'Yccc', 'id': 30}}, {'_domain': [['customerId', '=', 25]], '_total': 3, 'customerId': {'displayName': 'AND', 'name': 'AND', 'id': 25}}, {'_domain': [['customerId', '=', 32]], '_total': 3, 'customerId': {'displayName': 'Ni', 'name': 'Ni', 'id': 32}}, {'_domain': [['customerId', '=', 11]], '_total': 3, 'customerId': {'displayName': '陈建峰', 'name': '陈建峰', 'id': 11}}, {'_domain': [['customerId', '=', 51]], '_total': 3, 'customerId': {'displayName': 'LiPai-Ni', 'name': 'LiPai-Ni', 'id': 51}}, {'_domain': [['customerId', '=', 10]], '_total': 1, 'customerId': {'displayName': '555666', 'name': '555666', 'id': 10}}, {'_domain': [['customerId', '=', 7]], '_total': 1, 'customerId': {'displayName': '黄光洪', 'name': '黄光洪', 'id': 7}}], 'length': 16}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第19个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第20个接口: http://192.168.1.61/api/read_group
+[32mINFO    [0m root:key.py:22 传的参数是：{"lazy": true, "orderBy": "", "simple": false, "limit": 20, "offset": 1, "model": "customer_car", "domain": [], "fields": ["carModelBms", "carModelId", "displayName", "pictureUrl", "remark", "number", "companyId", "customerId", "name", "vin", "id"], "group": ["carModelId"]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:93 分组：模型：customer_car按'carModelId'分组，响应内容中的data为：{'records': [{'_domain': [['carModelId', '=', 914]], 'carModelId': {'displayName': '汉EV', 'name': '汉EV', 'id': 914}, '_total': 1}, {'_domain': [['carModelId', '=', 902]], 'carModelId': {'displayName': '奥迪A4L', 'name': '奥迪A4L', 'id': 902}, '_total': 1}, {'_domain': [['carModelId', '=', 78]], 'carModelId': {'displayName': '长城哈弗H3', 'name': '长城哈弗H3', 'id': 78}, '_total': 4}, {'_domain': [['carModelId', '=', 80]], 'carModelId': {'displayName': '风骏5', 'name': '风骏5', 'id': 80}, '_total': 2}, {'_domain': [['carModelId', '=', 95]], 'carModelId': {'displayName': '长安510KM', 'name': '长安510KM', 'id': 95}, '_total': 1}, {'_domain': [['carModelId', '=', 43]], 'carModelId': {'displayName': '比亚迪元510KM 旗舰型PLUS', 'name': '比亚迪元510KM 旗舰型PLUS', 'id': 43}, '_total': 1}, {'_domain': [['carModelId', '=', 4]], 'carModelId': {'displayName': '比亚迪元510KM 旗舰型PLUS', 'name': '比亚迪元510KM 旗舰型PLUS', 'id': 4}, '_total': 2}, {'_domain': [['carModelId', '=', 65]], 'carModelId': {'displayName': '比亚迪元510KM 旗舰型PLUS', 'name': '比亚迪元510KM 旗舰型PLUS', 'id': 65}, '_total': 1}, {'_domain': [['carModelId', '=', 68]], 'carModelId': {'displayName': '长安UNI-K', 'name': '长安UNI-K', 'id': 68}, '_total': 1}, {'_domain': [['carModelId', '=', 69]], 'carModelId': {'displayName': '第二代CS75P', 'name': '第二代CS75P', 'id': 69}, '_total': 1}, {'_domain': [['carModelId', '=', 86]], 'carModelId': {'displayName': 'CS75PLUS', 'name': 'CS75PLUS', 'id': 86}, '_total': 1}, {'_domain': [['carModelId', '=', 77]], 'carModelId': {'displayName': '长城C30', 'name': '长城C30', 'id': 77}, '_total': 1}, {'_domain': [['carModelId', '=', 81]], 'carModelId': {'displayName': '长安510KM9', 'name': '长安510KM9', 'id': 81}, '_total': 3}, {'_domain': [['carModelId', '=', 97]], 'carModelId': {'displayName': '宝马2', 'name': '宝马2', 'id': 97}, '_total': 1}, {'_domain': [['carModelId', '=', 94]], 'carModelId': {'displayName': '长安new', 'name': '长安new', 'id': 94}, '_total': 3}, {'_domain': [['carModelId', '=', 85]], 'carModelId': {'displayName': '风骏3', 'name': '风骏3', 'id': 85}, '_total': 2}, {'_domain': [['carModelId', '=', 67]], 'carModelId': {'displayName': '长安new2', 'name': '长安new2', 'id': 67}, '_total': 1}, {'_domain': [['carModelId', '=', 98]], 'carModelId': {'displayName': '蔚来210', 'name': '蔚来210', 'id': 98}, '_total': 1}, {'_domain': [['carModelId', '=?', None]], 'carModelId': {}, '_total': 24}, {'_domain': [['carModelId', '=', 1]], 'carModelId': {'displayName': '奥迪A3', 'name': '奥迪A3', 'id': 1}, '_total': 7}], 'length': 20}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第21个接口: http://192.168.1.61/api/unlink
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car", "ids": [744]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:54 删除：已删除模型customer_car中id为：744的记录
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第22个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第23个接口: http://192.168.1.61/api/default_get
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car", "fields": ["carModelBms", "carModelId", "displayName", "pictureUrl", "remark", "number", "companyId", "customerId", "name", "vin", "id"], "context": {}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:78 模型：customer_car的默认填充字段信息为：{'carModelBms': 0}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第5个接口: http://192.168.1.61/api/name_get
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_model", "id": 914}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第24个接口: http://192.168.1.61/api/create
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car", "map": {"carModelBms": 0, "carModelId": {"displayName": "\u6c49EV", "name": "\u6c49EV", "id": 914}, "customerId": {}, "number": "\u7ca4GF52UU", "remark": "\u7ca4GF52UU", "vin": "TEST0000000000135", "pictureUrl": "https://test3.gcevc.net/oss/customer_car/pictureUrl/1651051712594.png"}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:35 新建：创建模型：customer_car新记录，id为：745
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第25个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第26个接口: http://192.168.1.61/api/default_get
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car", "fields": ["carModelBms", "carModelId", "displayName", "pictureUrl", "remark", "number", "companyId", "customerId", "name", "vin", "id"], "context": {}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:78 模型：customer_car的默认填充字段信息为：{'carModelBms': 0}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第6个接口: http://192.168.1.61/api/name_get
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_model", "id": 914}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第27个接口: http://192.168.1.61/api/create
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car", "map": {"carModelBms": 0, "carModelId": {"displayName": "\u6c49EV", "name": "\u6c49EV", "id": 914}, "customerId": {}, "number": "\u7ca4GF92UU", "remark": "\u7ca4GF92UU", "vin": "TEST0000000000235", "pictureUrl": "https://test3.gcevc.net/oss/customer_car/pictureUrl/1651051712594.png"}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:35 新建：创建模型：customer_car新记录，id为：746
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第28个接口: http://192.168.1.61/api/unlink
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car", "ids": [745, 746]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:56 批量删除：已批量删除模型customer_car中id为：745, 746的记录
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第7个接口: http://192.168.1.61/api/unlink
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_model", "ids": [914]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:54 删除：已删除模型customer_car_model中id为：914的记录
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第10个接口: http://192.168.1.61/api/unlink
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_brand", "ids": [1097]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:54 删除：已删除模型customer_car_brand中id为：1097的记录

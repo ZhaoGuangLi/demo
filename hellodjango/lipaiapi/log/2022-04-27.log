@@ -1,0 +1,457 @@
+2022-04-27 10:46:16,445 INFO [root] [key.py (post:15] - 正在测试的接口是：
+2022-04-27 10:46:16,445 INFO [root] [key.py (post:16] - 传的参数是：
+2022-04-27 10:46:16,466 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是：
+2022-04-27 10:46:16,468 INFO [root] [key.py (create:27] - 正在创建customer_car_brand id为：56
+2022-04-27 10:49:12,705 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 10:49:12,705 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 10:49:12,706 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 10:50:04,859 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 10:50:04,859 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 10:50:04,860 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 10:50:04,860 INFO [root] [key.py (create:28] - 正在创建customer_car_brand id为：58
+2022-04-27 10:56:28,757 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 10:56:28,757 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 10:56:28,758 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 10:56:28,758 INFO [root] [key.py (create:28] - 正在创建模型：customer_car_brand新记录，id为：59
+2022-04-27 11:06:49,830 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 11:06:49,831 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 11:06:49,831 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:06:49,831 INFO [root] [key.py (create:28] - 正在创建模型：customer_car_brand新记录，id为：60
+2022-04-27 11:06:49,837 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:06:49,837 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 60}
+2022-04-27 11:06:49,837 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:06:49,845 INFO [root] [key.py (read:34] - 正在查看模型customer_car_brand中id为：{'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADI', 'displayName': '比亚迪', 'name': '比亚迪', 'id': 60, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADI', 'displayName': '比亚迪', 'name': '比亚迪', 'id': 60, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:06:49,854 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/onchange
+2022-04-27 11:06:49,854 INFO [root] [key.py (post:16] - 传的参数是：{"id": {"carModelIds": [], "companyId": {"displayName": "hx", "name": "hx", "id": 1}, "pinyin": "BIYADI", "displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 60, "logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png"}, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+2022-04-27 11:06:49,855 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 500
+2022-04-27 11:06:49,855 ERROR [root] [key.py (post:22] - 出现异常，code:500不等于200
+2022-04-27 11:16:05,576 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 11:16:05,576 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 11:16:05,576 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:16:05,576 INFO [root] [key.py (create:28] - 正在创建模型：customer_car_brand新记录，id为：61
+2022-04-27 11:16:05,584 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:16:05,584 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 61}
+2022-04-27 11:16:05,584 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:16:05,585 INFO [root] [key.py (read:34] - 正在查看模型customer_car_brand中id为：61的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADI', 'displayName': '比亚迪', 'name': '比亚迪', 'id': 61, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:16:05,591 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/onchange
+2022-04-27 11:16:05,592 INFO [root] [key.py (post:16] - 传的参数是：{"id": {"carModelIds": [], "companyId": {"displayName": "hx", "name": "hx", "id": 1}, "pinyin": "BIYADI", "displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 61, "logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png"}, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+2022-04-27 11:16:05,592 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 500
+2022-04-27 11:16:05,592 ERROR [root] [key.py (post:22] - 出现异常，code:500不等于200
+2022-04-27 11:20:48,003 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 11:20:48,004 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 11:20:48,004 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:20:48,004 INFO [root] [key.py (create:28] - 正在创建模型：customer_car_brand新记录，id为：62
+2022-04-27 11:20:48,011 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:20:48,011 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 62}
+2022-04-27 11:20:48,012 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:20:48,012 INFO [root] [key.py (read:34] - 正在查看模型customer_car_brand中id为：62的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADI', 'displayName': '比亚迪', 'name': '比亚迪', 'id': 62, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:20:48,017 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/onchange
+2022-04-27 11:20:48,017 INFO [root] [key.py (post:16] - 传的参数是：{"id": 62, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+2022-04-27 11:20:48,017 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:20:48,025 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/write
+2022-04-27 11:20:48,025 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49", "pinyin": "BIYADIHAN"}, "id": 62}
+2022-04-27 11:20:48,025 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:20:48,039 INFO [root] [key.py (edit:41] - 正在编辑模型customer_car_brand中id为：True的记录
+2022-04-27 11:20:48,046 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:20:48,047 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 62}
+2022-04-27 11:20:48,047 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:20:48,047 INFO [root] [key.py (read:34] - 正在查看模型customer_car_brand中id为：62的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADIHAN', 'displayName': '比亚迪汉', 'name': '比亚迪汉', 'id': 62, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:20:48,054 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/unlink
+2022-04-27 11:20:48,054 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "ids": [62]}
+2022-04-27 11:20:48,054 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:20:48,055 INFO [root] [key.py (delete:47] - 正在删除模型customer_car_brand中id为：True的记录
+2022-04-27 11:22:39,370 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 11:22:39,370 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 11:22:39,371 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:22:39,371 INFO [root] [key.py (create:28] - 正在创建模型：customer_car_brand新记录，id为：63
+2022-04-27 11:22:39,379 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:22:39,380 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 63}
+2022-04-27 11:22:39,380 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:22:39,380 INFO [root] [key.py (read:34] - 正在查看模型customer_car_brand中id为：63的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADI', 'displayName': '比亚迪', 'name': '比亚迪', 'id': 63, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:22:39,387 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/onchange
+2022-04-27 11:22:39,387 INFO [root] [key.py (post:16] - 传的参数是：{"id": 63, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+2022-04-27 11:22:39,387 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:22:39,402 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/write
+2022-04-27 11:22:39,402 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49", "pinyin": "BIYADIHAN"}, "id": 63}
+2022-04-27 11:22:39,402 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:22:39,403 INFO [root] [key.py (edit:41] - 正在编辑模型customer_car_brand中id为：63的记录
+2022-04-27 11:22:39,409 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:22:39,410 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 63}
+2022-04-27 11:22:39,410 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:22:39,410 INFO [root] [key.py (read:34] - 正在查看模型customer_car_brand中id为：63的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADIHAN', 'displayName': '比亚迪汉', 'name': '比亚迪汉', 'id': 63, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:22:39,419 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/unlink
+2022-04-27 11:22:39,419 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "ids": [63]}
+2022-04-27 11:22:39,419 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:23:54,738 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 11:23:54,738 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 11:23:54,738 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:23:54,739 INFO [root] [key.py (create:28] - 正在创建模型：customer_car_brand新记录，id为：64
+2022-04-27 11:23:54,746 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:23:54,746 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 64}
+2022-04-27 11:23:54,746 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:23:54,746 INFO [root] [key.py (read:34] - 正在查看模型customer_car_brand中id为：64的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADI', 'displayName': '比亚迪', 'name': '比亚迪', 'id': 64, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:23:54,755 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/onchange
+2022-04-27 11:23:54,756 INFO [root] [key.py (post:16] - 传的参数是：{"id": 64, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+2022-04-27 11:23:54,756 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:23:54,780 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/write
+2022-04-27 11:23:54,780 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49", "pinyin": "BIYADIHAN"}, "id": 64}
+2022-04-27 11:23:54,780 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:23:54,780 INFO [root] [key.py (edit:41] - 正在编辑模型customer_car_brand中id为：64的记录
+2022-04-27 11:23:54,787 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:23:54,787 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 64}
+2022-04-27 11:23:54,787 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:23:54,787 INFO [root] [key.py (read:34] - 正在查看模型customer_car_brand中id为：64的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADIHAN', 'displayName': '比亚迪汉', 'name': '比亚迪汉', 'id': 64, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:23:54,808 INFO [root] [key.py (post:15] - 正在测试的接口是：http://192.168.1.61//api/unlink
+2022-04-27 11:23:54,809 INFO [root] [key.py (post:16] - 传的参数是：{"model": "customer_car_brand", "ids": [64]}
+2022-04-27 11:23:54,810 INFO [root] [key.py (post:17] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:23:54,811 INFO [root] [key.py (delete:47] - 正在删除模型customer_car_brand中id为：[64]的记录
+2022-04-27 11:34:26,812 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 11:34:26,812 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 11:34:26,813 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:34:26,813 INFO [root] [key.py (create:30] - 创建模型：customer_car_brand新记录，id为：65
+2022-04-27 11:34:26,819 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:34:26,819 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 65}
+2022-04-27 11:34:26,819 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:34:26,819 INFO [root] [key.py (read:36] - 查看模型customer_car_brand中id为：65的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADI', 'displayName': '比亚迪', 'name': '比亚迪', 'id': 65, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:34:26,824 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/onchange
+2022-04-27 11:34:26,825 INFO [root] [key.py (post:18] - 传的参数是：{"id": 65, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+2022-04-27 11:34:26,825 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:34:26,833 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/write
+2022-04-27 11:34:26,834 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49", "pinyin": "BIYADIHAN"}, "id": 65}
+2022-04-27 11:34:26,834 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:34:26,834 INFO [root] [key.py (edit:43] - 编辑模型customer_car_brand中id为：65的记录已成功
+2022-04-27 11:34:26,841 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:34:26,842 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 65}
+2022-04-27 11:34:26,842 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:34:26,842 INFO [root] [key.py (read:36] - 查看模型customer_car_brand中id为：65的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADIHAN', 'displayName': '比亚迪汉', 'name': '比亚迪汉', 'id': 65, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:34:26,850 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/unlink
+2022-04-27 11:34:26,850 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "ids": [65]}
+2022-04-27 11:34:26,850 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:51:11,390 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 11:51:11,390 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 11:51:11,391 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:51:11,391 INFO [root] [key.py (create:30] - 创建模型：customer_car_brand新记录，id为：66
+2022-04-27 11:51:11,398 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:51:11,398 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 66}
+2022-04-27 11:51:11,398 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:51:11,398 INFO [root] [key.py (read:36] - 查看模型customer_car_brand中id为：66的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADI', 'displayName': '比亚迪', 'name': '比亚迪', 'id': 66, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:51:11,404 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/onchange
+2022-04-27 11:51:11,404 INFO [root] [key.py (post:18] - 传的参数是：{"id": 66, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+2022-04-27 11:51:11,404 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:51:11,414 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/write
+2022-04-27 11:51:11,415 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49", "pinyin": "BIYADIHAN"}, "id": 66}
+2022-04-27 11:51:11,415 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:51:11,415 INFO [root] [key.py (edit:43] - 编辑模型customer_car_brand中id为：66的记录已成功
+2022-04-27 11:51:11,422 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:51:11,422 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 66}
+2022-04-27 11:51:11,422 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:51:11,422 INFO [root] [key.py (read:36] - 查看模型customer_car_brand中id为：66的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADIHAN', 'displayName': '比亚迪汉', 'name': '比亚迪汉', 'id': 66, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:51:11,430 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/unlink
+2022-04-27 11:51:11,430 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "ids": [66]}
+2022-04-27 11:51:11,430 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:52:28,978 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 11:52:28,978 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 11:52:28,978 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:52:28,978 INFO [root] [key.py (create:30] - 创建模型：customer_car_brand新记录，id为：67
+2022-04-27 11:52:28,987 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:52:28,987 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 67}
+2022-04-27 11:52:28,988 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:52:28,988 INFO [root] [key.py (read:36] - 查看模型customer_car_brand中id为：67的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADI', 'displayName': '比亚迪', 'name': '比亚迪', 'id': 67, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:52:29,012 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/onchange
+2022-04-27 11:52:29,012 INFO [root] [key.py (post:18] - 传的参数是：{"id": 67, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+2022-04-27 11:52:29,013 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:52:29,022 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/write
+2022-04-27 11:52:29,022 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49", "pinyin": "BIYADIHAN"}, "id": 67}
+2022-04-27 11:52:29,022 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:52:29,022 INFO [root] [key.py (edit:43] - 编辑模型customer_car_brand中id为：67的记录已成功
+2022-04-27 11:52:29,029 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 11:52:29,029 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName"], "id": 67}
+2022-04-27 11:52:29,029 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:52:29,029 INFO [root] [key.py (read:36] - 查看模型customer_car_brand中id为：67的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADIHAN', 'displayName': '比亚迪汉', 'name': '比亚迪汉', 'id': 67, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 11:52:29,041 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/unlink
+2022-04-27 11:52:29,042 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "ids": [67]}
+2022-04-27 11:52:29,042 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 11:52:29,042 INFO [root] [key.py (delete:49] - 已删除模型customer_car_brand中id为：67的记录
+2022-04-27 13:54:05,625 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 13:54:05,625 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 13:54:05,625 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 401
+2022-04-27 13:54:05,626 ERROR [root] [key.py (post:24] - 出现异常，code:401不等于200
+2022-04-27 13:54:30,373 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 13:54:30,374 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 13:54:30,376 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 13:54:30,377 INFO [root] [key.py (create:30] - 创建模型：customer_car_brand新记录，id为：68
+2022-04-27 13:54:30,395 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 13:54:30,396 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName", "updateTime"], "id": 68}
+2022-04-27 13:54:30,396 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 13:54:30,397 INFO [root] [key.py (read:36] - 查看模型customer_car_brand中id为：68的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADI', 'displayName': '比亚迪', 'name': '比亚迪', 'updateTime': '2022-04-27 13:54:29', 'id': 68, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 13:54:30,525 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/onchange
+2022-04-27 13:54:30,526 INFO [root] [key.py (post:18] - 传的参数是：{"id": 68, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+2022-04-27 13:54:30,526 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 13:54:30,546 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/write
+2022-04-27 13:54:30,547 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49", "pinyin": "BIYADIHAN"}, "id": 68}
+2022-04-27 13:54:30,549 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 13:54:30,550 INFO [root] [key.py (edit:43] - 编辑模型customer_car_brand中id为：68的记录已成功
+2022-04-27 13:54:30,564 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 13:54:30,565 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "fields": ["logoUrl", "name", "pinyin", "companyId", "carModelIds", "id", "displayName", "updateTime"], "id": 68}
+2022-04-27 13:54:30,565 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 13:54:30,566 INFO [root] [key.py (read:36] - 查看模型customer_car_brand中id为：68的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADIHAN', 'displayName': '比亚迪汉', 'name': '比亚迪汉', 'updateTime': '2022-04-27 13:54:29', 'id': 68, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 13:54:30,579 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/unlink
+2022-04-27 13:54:30,579 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "ids": [68]}
+2022-04-27 13:54:30,579 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 13:54:30,580 INFO [root] [key.py (delete:49] - 已删除模型customer_car_brand中id为：68的记录
+2022-04-27 14:12:13,435 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 14:12:13,435 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 14:12:13,435 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:12:13,436 INFO [root] [key.py (create:30] - 创建模型：customer_car_brand新记录，id为：69
+2022-04-27 14:12:13,477 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 14:12:13,477 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_brand", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 14:12:13,478 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:12:13,489 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 14:12:13,489 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "fields": ["carModelIds", "companyId", "createBy", "pinyin", "createTime", "updateBy", "displayName", "name", "carModelCount", "updateTime", "id", "logoUrl"], "id": 69}
+2022-04-27 14:12:13,489 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:12:13,489 INFO [root] [key.py (read:36] - 查看模型customer_car_brand中id为：69的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'createBy': 1, 'pinyin': 'BIYADI', 'createTime': '2022-04-27 14:12:12', 'updateBy': 1, 'displayName': '比亚迪', 'name': '比亚迪', 'carModelCount': 0, 'updateTime': '2022-04-27 14:12:12', 'id': 69, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 14:12:13,498 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/onchange
+2022-04-27 14:12:13,498 INFO [root] [key.py (post:18] - 传的参数是：{"id": 69, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+2022-04-27 14:12:13,498 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:12:13,507 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/write
+2022-04-27 14:12:13,508 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49", "pinyin": "BIYADIHAN"}, "id": 69}
+2022-04-27 14:12:13,508 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:12:13,508 INFO [root] [key.py (edit:43] - 编辑模型customer_car_brand中id为：69的记录已成功
+2022-04-27 14:12:13,544 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 14:12:13,544 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_brand", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 14:12:13,545 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:12:13,553 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 14:12:13,553 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "fields": ["carModelIds", "companyId", "createBy", "pinyin", "createTime", "updateBy", "displayName", "name", "carModelCount", "updateTime", "id", "logoUrl"], "id": 69}
+2022-04-27 14:12:13,553 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:12:13,554 INFO [root] [key.py (read:36] - 查看模型customer_car_brand中id为：69的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'createBy': 1, 'pinyin': 'BIYADIHAN', 'createTime': '2022-04-27 14:12:12', 'updateBy': 1, 'displayName': '比亚迪汉', 'name': '比亚迪汉', 'carModelCount': 0, 'updateTime': '2022-04-27 14:12:12', 'id': 69, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+2022-04-27 14:12:13,562 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/unlink
+2022-04-27 14:12:13,562 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "ids": [69]}
+2022-04-27 14:12:13,562 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:12:13,563 INFO [root] [key.py (delete:49] - 已删除模型customer_car_brand中id为：69的记录
+2022-04-27 14:34:35,732 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 14:34:35,732 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 14:34:35,733 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:35:54,356 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 14:35:54,357 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 14:35:54,357 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:36:42,472 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 14:36:42,472 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 14:36:42,473 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:37:20,964 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 14:37:20,964 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 14:37:20,965 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:37:20,965 INFO [root] [key.py (post:20] - 内容为：{'fields': {'enduranceMileage': {'name': 'enduranceMileage', 'translate': '续航里程', 'type': 'Integer', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"续航里程不能为空"}', 'views': {}}, 'totalBatteryCapacity': {'name': 'totalBatteryCapacity', 'translate': '电池额度总电量', 'type': 'Float', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"电池额度总电量不能为空"}', 'views': {}}, 'carBrandId': {'name': 'carBrandId', 'translate': '汽车品牌', 'type': 'Many2one', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"汽车品牌不能为空"}', 'views': {}, 'relation': 'customer_car_brand'}, 'displayName': {'name': 'displayName', 'translate': '展示名称', 'type': 'Char', 'required': False, 'readonly': True, 'searchable': True, 'sortable': False, 'store': False, 'views': {}}, 'pictureUrl': {'name': 'pictureUrl', 'translate': '车型图片', 'type': 'Binary', 'required': False, 'readonly': False, 'searchable': False, 'sortable': False, 'store': True, 'views': {}}, 'bms': {'name': 'bms', 'translate': 'BMS辅助电源', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"BMS辅助电源不能为空"}', 'selection': [[0, '12V'], [1, '24V']], 'views': {}}, 'updateTime': {'name': 'updateTime', 'translate': '更新时间', 'type': 'Datetime', 'required': True, 'readonly': True, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"更新时间不能为空"}', 'views': {}}, 'nationalStandard': {'name': 'nationalStandard', 'translate': '国家标准', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"国家标准不能为空"}', 'selection': [[1, '2011'], [2, '2015'], [255, '其他']], 'views': {}}, 'companyId': {'name': 'companyId', 'translate': '公司', 'type': 'Many2one', 'required': False, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'views': {}, 'relation': 'res_company'}, 'createBy': {'name': 'createBy', 'translate': '创建者', 'type': 'Integer', 'required': True, 'readonly': True, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"创建者不能为空"}', 'views': {}}, 'createTime': {'name': 'createTime', 'translate': '创建时间', 'type': 'Datetime', 'required': True, 'readonly': True, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"创建时间不能为空"}', 'views': {}}, 'updateBy': {'name': 'updateBy', 'translate': '更新者', 'type': 'Integer', 'required': True, 'readonly': True, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"更新者不能为空"}', 'views': {}}, 'name': {'name': 'name', 'translate': '车型名称', 'type': 'Char', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"pattern":"^.{1,64}$","type":"Pattern","message":"名称必须为1-64位字符"}', 'views': {}}, 'id': {'name': 'id', 'translate': 'ID', 'type': 'Integer', 'required': True, 'readonly': True, 'searchable': True, 'sortable': True, 'store': True, 'views': {}}}, 'fields_views': {'search': {'id': 87, 'name': 'customer_car_model Search', 'type': 'search', 'arch': '<search string="车型">\n                <field name="name" string="名称"/>\n                <field name="carBrandId" string="车辆品牌"/>\n                <group string="分组按">\n                    <field name="groupby_carBrandId" string="车辆品牌" context="{\'group_by\': \'carBrandId\'}"/>\n                </group>\n            </search>', 'fields': {'carBrandId': {'name': 'carBrandId', 'translate': '汽车品牌', 'type': 'Many2one', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"汽车品牌不能为空"}', 'views': {}, 'relation': 'customer_car_brand'}, 'name': {'name': 'name', 'translate': '车型名称', 'type': 'Char', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"pattern":"^.{1,64}$","type":"Pattern","message":"名称必须为1-64位字符"}', 'views': {}}}, 'toolbar': {'action': [], 'print': [], 'relate': []}}, 'form': {'id': 86, 'name': 'customer_car_model Form', 'type': 'form', 'arch': '<form string="车型">\n                <sheet>\n                    <group>\n                        <group>\n                            <field name="pictureUrl" string="车型照片" widget="photo"/>\n                        </group>\n                        <group>\n                            <field name="name" string="名称"/>\n                            <field name="carBrandId" string="车辆品牌"/>\n                            <field name="companyId" attrs="{\'invisible\':[[\'id\',\'=?\']]}"/>\n                        </group>\n                    </group>\n                    <group>\n                        <group>\n                            <field name="nationalStandard" string="支持国标"/>\n                            <field name="totalBatteryCapacity" options="{\'unit\':\'kW.h\'}"/>\n                        </group>\n                        <group>\n                            <field name="bms" string="辅助电源"/>\n                            <field name="enduranceMileage" options="{\'unit\':\'km\'}"/>\n                        </group>\n                    </group>\n                </sheet>\n            </form>', 'fields': {'companyId': {'name': 'companyId', 'translate': '公司', 'type': 'Many2one', 'required': False, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'views': {}, 'relation': 'res_company'}, 'enduranceMileage': {'name': 'enduranceMileage', 'translate': '续航里程', 'type': 'Integer', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"续航里程不能为空"}', 'views': {}}, 'totalBatteryCapacity': {'name': 'totalBatteryCapacity', 'translate': '电池额度总电量', 'type': 'Float', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"电池额度总电量不能为空"}', 'views': {}}, 'carBrandId': {'name': 'carBrandId', 'translate': '汽车品牌', 'type': 'Many2one', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"汽车品牌不能为空"}', 'views': {}, 'relation': 'customer_car_brand'}, 'pictureUrl': {'name': 'pictureUrl', 'translate': '车型图片', 'type': 'Binary', 'required': False, 'readonly': False, 'searchable': False, 'sortable': False, 'store': True, 'views': {}}, 'name': {'name': 'name', 'translate': '车型名称', 'type': 'Char', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"pattern":"^.{1,64}$","type":"Pattern","message":"名称必须为1-64位字符"}', 'views': {}}, 'bms': {'name': 'bms', 'translate': 'BMS辅助电源', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"BMS辅助电源不能为空"}', 'selection': [[0, '12V'], [1, '24V']], 'views': {}}, 'nationalStandard': {'name': 'nationalStandard', 'translate': '国家标准', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"国家标准不能为空"}', 'selection': [[1, '2011'], [2, '2015'], [255, '其他']], 'views': {}}}, 'toolbar': {'action': [], 'print': [], 'relate': []}}, 'tree': {'id': 85, 'name': 'customer_car_model Tree', 'type': 'tree', 'arch': '<tree string="车型">\n                <field name="name" string="名称"/>\n                <field name="carBrandId" string="车辆品牌"/>\n                <field name="nationalStandard" string="支持国标"/>\n                <field name="totalBatteryCapacity" options="{\'unit\':\'kW.h\'}"/>\n                <field name="bms" string="辅助电源"/>\n                <field name="enduranceMileage" options="{\'unit\':\'km\'}"/>\n            </tree>', 'fields': {'enduranceMileage': {'name': 'enduranceMileage', 'translate': '续航里程', 'type': 'Integer', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"续航里程不能为空"}', 'views': {}}, 'totalBatteryCapacity': {'name': 'totalBatteryCapacity', 'translate': '电池额度总电量', 'type': 'Float', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"电池额度总电量不能为空"}', 'views': {}}, 'carBrandId': {'name': 'carBrandId', 'translate': '汽车品牌', 'type': 'Many2one', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"汽车品牌不能为空"}', 'views': {}, 'relation': 'customer_car_brand'}, 'name': {'name': 'name', 'translate': '车型名称', 'type': 'Char', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"pattern":"^.{1,64}$","type":"Pattern","message":"名称必须为1-64位字符"}', 'views': {}}, 'bms': {'name': 'bms', 'translate': 'BMS辅助电源', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"BMS辅助电源不能为空"}', 'selection': [[0, '12V'], [1, '24V']], 'views': {}}, 'nationalStandard': {'name': 'nationalStandard', 'translate': '国家标准', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"国家标准不能为空"}', 'selection': [[1, '2011'], [2, '2015'], [255, '其他']], 'views': {}}}, 'toolbar': {'action': [], 'print': [], 'relate': []}}}}
+2022-04-27 14:39:49,533 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 14:39:49,534 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 14:39:49,537 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:39:49,553 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/default_get
+2022-04-27 14:39:49,554 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "updateTime", "nationalStandard", "companyId", "createBy", "createTime", "updateBy", "name", "id"], "context": {}}
+2022-04-27 14:39:49,555 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:39:49,556 INFO [root] [key.py (default_get:70] - 内容为：{'createBy': 0, 'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'updateBy': 0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 14:41:12,217 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 14:41:12,217 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 14:41:12,218 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:41:12,224 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/default_get
+2022-04-27 14:41:12,224 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "updateTime", "nationalStandard", "companyId", "createBy", "createTime", "updateBy", "name", "id"], "context": {}}
+2022-04-27 14:41:12,225 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 14:41:12,225 INFO [root] [key.py (default_get:70] - 模型：customer_car_model的默认字段信息为：{'createBy': 0, 'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'updateBy': 0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 15:06:13,352 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 15:06:13,353 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 15:06:13,353 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:06:13,359 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/default_get
+2022-04-27 15:06:13,359 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+2022-04-27 15:06:13,359 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:06:13,359 INFO [root] [key.py (default_get:70] - 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 15:11:19,427 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 15:11:19,427 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 15:11:19,428 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:11:19,436 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/default_get
+2022-04-27 15:11:19,436 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+2022-04-27 15:11:19,437 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:11:19,437 INFO [root] [key.py (default_get:70] - 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 15:11:19,443 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/name_get
+2022-04-27 15:11:19,443 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "id": ""}
+2022-04-27 15:11:19,444 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:11:19,462 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 15:11:19,462 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {}, "name": "\u6c49EV"}}
+2022-04-27 15:11:19,463 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 413
+2022-04-27 15:11:19,463 ERROR [root] [key.py (post:25] - 出现异常，code:413不等于200
+2022-04-27 15:13:17,068 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 15:13:17,068 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 15:13:17,068 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:13:17,068 INFO [root] [key.py (create:31] - 创建模型：customer_car_brand新记录，id为：70
+2022-04-27 15:13:17,100 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 15:13:17,100 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 15:13:17,100 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:13:17,106 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/default_get
+2022-04-27 15:13:17,107 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+2022-04-27 15:13:17,107 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:13:17,107 INFO [root] [key.py (default_get:70] - 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 15:13:17,113 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/name_get
+2022-04-27 15:13:17,114 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "id": 70}
+2022-04-27 15:13:17,114 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:13:17,130 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 15:13:17,131 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {"displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 70}, "name": "\u6c49EV"}}
+2022-04-27 15:13:17,131 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:13:17,131 INFO [root] [key.py (create:31] - 创建模型：customer_car_model新记录，id为：102
+2022-04-27 15:17:44,192 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 15:17:44,192 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 15:17:44,192 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,192 INFO [root] [key.py (create:31] - 创建模型：customer_car_brand新记录，id为：71
+2022-04-27 15:17:44,255 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 15:17:44,256 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 15:17:44,256 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,262 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/default_get
+2022-04-27 15:17:44,263 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+2022-04-27 15:17:44,263 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,263 INFO [root] [key.py (default_get:70] - 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 15:17:44,272 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/name_get
+2022-04-27 15:17:44,272 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "id": 71}
+2022-04-27 15:17:44,272 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,293 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 15:17:44,293 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {"displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 71}, "name": "\u6c49EV"}}
+2022-04-27 15:17:44,293 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,294 INFO [root] [key.py (create:31] - 创建模型：customer_car_model新记录，id为：103
+2022-04-27 15:17:44,322 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 15:17:44,322 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 15:17:44,323 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,344 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 15:17:44,344 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "id": 103}
+2022-04-27 15:17:44,345 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,345 INFO [root] [key.py (read:37] - 查看模型customer_car_model中id为：103的内容： {'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'carBrandId': {'displayName': '比亚迪', 'name': '比亚迪', 'id': 71}, 'displayName': '汉EV', 'pictureUrl': 'https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png', 'name': '汉EV', 'bms': 1, 'id': 103, 'nationalStandard': 255}
+2022-04-27 15:17:44,363 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/write
+2022-04-27 15:17:44,364 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "map": {"name": "\u6c49EV\u65d7\u8230\u7248"}, "id": 103}
+2022-04-27 15:17:44,364 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,365 INFO [root] [key.py (edit:44] - 编辑模型customer_car_model中id为：103的记录已成功
+2022-04-27 15:17:44,392 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 15:17:44,392 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 15:17:44,392 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,399 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/read
+2022-04-27 15:17:44,400 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "id": 103}
+2022-04-27 15:17:44,400 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,400 INFO [root] [key.py (read:37] - 查看模型customer_car_model中id为：103的内容： {'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'carBrandId': {'displayName': '比亚迪', 'name': '比亚迪', 'id': 71}, 'displayName': '汉EV旗舰版', 'pictureUrl': 'https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png', 'name': '汉EV旗舰版', 'bms': 1, 'id': 103, 'nationalStandard': 255}
+2022-04-27 15:17:44,415 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/unlink
+2022-04-27 15:17:44,416 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "ids": [103]}
+2022-04-27 15:17:44,416 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,416 INFO [root] [key.py (delete:50] - 已删除模型customer_car_model中id为：103的记录
+2022-04-27 15:17:44,426 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/unlink
+2022-04-27 15:17:44,427 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "ids": [71]}
+2022-04-27 15:17:44,427 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 15:17:44,427 INFO [root] [key.py (delete:50] - 已删除模型customer_car_brand中id为：71的记录
+2022-04-27 17:35:27,033 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 17:35:27,039 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 17:35:27,048 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 401
+2022-04-27 17:35:27,048 ERROR [root] [key.py (post:25] - 出现异常，code:401不等于200
+2022-04-27 17:35:47,781 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 17:35:47,781 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 17:35:47,781 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:35:47,781 INFO [root] [key.py (create:31] - 创建模型：customer_car_brand新记录，id为：72
+2022-04-27 17:35:47,812 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/load_views
+2022-04-27 17:35:47,812 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 17:35:47,813 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:35:47,823 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/default_get
+2022-04-27 17:35:47,823 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+2022-04-27 17:35:47,823 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:35:47,824 INFO [root] [key.py (default_get:70] - 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 17:35:47,831 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/name_get
+2022-04-27 17:35:47,831 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "id": ""}
+2022-04-27 17:35:47,831 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:35:47,850 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61//api/create
+2022-04-27 17:35:47,850 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {}, "name": "\u6c49EV"}}
+2022-04-27 17:35:47,850 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 413
+2022-04-27 17:35:47,851 ERROR [root] [key.py (post:25] - 出现异常，code:413不等于200
+2022-04-27 17:41:51,156 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/create
+2022-04-27 17:41:51,156 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 17:41:51,156 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:41:51,157 INFO [root] [key.py (create:31] - 创建模型：customer_car_brand新记录，id为：73
+2022-04-27 17:41:51,185 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/load_views
+2022-04-27 17:41:51,185 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 17:41:51,185 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:41:51,191 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/default_get
+2022-04-27 17:41:51,191 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+2022-04-27 17:41:51,192 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:41:51,192 INFO [root] [key.py (default_get:70] - 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 17:41:51,198 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/name_get
+2022-04-27 17:41:51,198 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "id": 73}
+2022-04-27 17:41:51,198 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:41:51,208 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/create
+2022-04-27 17:41:51,209 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {"displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 73}, "name": "\u6c49EV"}}
+2022-04-27 17:41:51,209 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:41:51,209 INFO [root] [key.py (create:31] - 创建模型：customer_car_model新记录，id为：104
+2022-04-27 17:44:30,335 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/create
+2022-04-27 17:44:30,335 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 17:44:30,335 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:44:30,335 INFO [root] [key.py (create:31] - 创建模型：customer_car_brand新记录，id为：74
+2022-04-27 17:44:30,362 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/load_views
+2022-04-27 17:44:30,362 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 17:44:30,363 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:44:30,368 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/default_get
+2022-04-27 17:44:30,369 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+2022-04-27 17:44:30,369 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:44:30,369 INFO [root] [key.py (default_get:70] - 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 17:44:30,375 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/name_get
+2022-04-27 17:44:30,375 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "id": 74}
+2022-04-27 17:44:30,376 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:44:30,386 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/create
+2022-04-27 17:44:30,386 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {"displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 74}, "name": "\u6c49EV"}}
+2022-04-27 17:44:30,386 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:44:30,387 INFO [root] [key.py (create:31] - 创建模型：customer_car_model新记录，id为：105
+2022-04-27 17:49:12,660 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/create
+2022-04-27 17:49:12,660 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 17:49:12,660 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:49:12,660 INFO [root] [key.py (create:31] - 创建模型：customer_car_brand新记录，id为：75
+2022-04-27 17:49:12,689 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/load_views
+2022-04-27 17:49:12,689 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 17:49:12,689 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:49:12,696 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/default_get
+2022-04-27 17:49:12,696 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+2022-04-27 17:49:12,697 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:49:12,697 INFO [root] [key.py (default_get:70] - 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 17:49:12,703 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/name_get
+2022-04-27 17:49:12,703 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "id": 75}
+2022-04-27 17:49:12,703 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:49:12,712 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/create
+2022-04-27 17:49:12,712 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {"displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 75}, "name": "\u6c49EV"}}
+2022-04-27 17:49:12,712 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:49:12,712 INFO [root] [key.py (create:31] - 创建模型：customer_car_model新记录，id为：106
+2022-04-27 17:51:54,932 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/create
+2022-04-27 17:51:54,932 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 17:51:54,932 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:51:54,933 INFO [root] [key.py (create:31] - 创建模型：customer_car_brand新记录，id为：76
+2022-04-27 17:51:54,969 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/load_views
+2022-04-27 17:51:54,969 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 17:51:54,970 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:51:54,976 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/default_get
+2022-04-27 17:51:54,976 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+2022-04-27 17:51:54,977 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:51:54,977 INFO [root] [key.py (default_get:70] - 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 17:51:54,986 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/name_get
+2022-04-27 17:51:54,987 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "id": 76}
+2022-04-27 17:51:54,988 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:51:55,006 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/create
+2022-04-27 17:51:55,007 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {"displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 76}, "name": "\u6c49EV"}}
+2022-04-27 17:51:55,007 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:51:55,008 INFO [root] [key.py (create:31] - 创建模型：customer_car_model新记录，id为：107
+2022-04-27 17:53:51,694 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/create
+2022-04-27 17:53:51,694 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+2022-04-27 17:53:51,694 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:53:51,694 INFO [root] [key.py (post:20] - 内容为：77
+2022-04-27 17:53:51,695 INFO [root] [key.py (create:31] - 创建模型：customer_car_brand新记录，id为：77
+2022-04-27 17:53:51,724 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/load_views
+2022-04-27 17:53:51,724 INFO [root] [key.py (post:18] - 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+2022-04-27 17:53:51,724 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:53:51,725 INFO [root] [key.py (post:20] - 内容为：{'fields': {'enduranceMileage': {'name': 'enduranceMileage', 'translate': '续航里程', 'type': 'Integer', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"续航里程不能为空"}', 'views': {}}, 'totalBatteryCapacity': {'name': 'totalBatteryCapacity', 'translate': '电池额度总电量', 'type': 'Float', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"电池额度总电量不能为空"}', 'views': {}}, 'carBrandId': {'name': 'carBrandId', 'translate': '汽车品牌', 'type': 'Many2one', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"汽车品牌不能为空"}', 'views': {}, 'relation': 'customer_car_brand'}, 'displayName': {'name': 'displayName', 'translate': '展示名称', 'type': 'Char', 'required': False, 'readonly': True, 'searchable': True, 'sortable': False, 'store': False, 'views': {}}, 'pictureUrl': {'name': 'pictureUrl', 'translate': '车型图片', 'type': 'Binary', 'required': False, 'readonly': False, 'searchable': False, 'sortable': False, 'store': True, 'views': {}}, 'bms': {'name': 'bms', 'translate': 'BMS辅助电源', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"BMS辅助电源不能为空"}', 'selection': [[0, '12V'], [1, '24V']], 'views': {}}, 'updateTime': {'name': 'updateTime', 'translate': '更新时间', 'type': 'Datetime', 'required': True, 'readonly': True, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"更新时间不能为空"}', 'views': {}}, 'nationalStandard': {'name': 'nationalStandard', 'translate': '国家标准', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"国家标准不能为空"}', 'selection': [[1, '2011'], [2, '2015'], [255, '其他']], 'views': {}}, 'companyId': {'name': 'companyId', 'translate': '公司', 'type': 'Many2one', 'required': False, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'views': {}, 'relation': 'res_company'}, 'createBy': {'name': 'createBy', 'translate': '创建者', 'type': 'Integer', 'required': True, 'readonly': True, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"创建者不能为空"}', 'views': {}}, 'createTime': {'name': 'createTime', 'translate': '创建时间', 'type': 'Datetime', 'required': True, 'readonly': True, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"创建时间不能为空"}', 'views': {}}, 'updateBy': {'name': 'updateBy', 'translate': '更新者', 'type': 'Integer', 'required': True, 'readonly': True, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"更新者不能为空"}', 'views': {}}, 'name': {'name': 'name', 'translate': '车型名称', 'type': 'Char', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"pattern":"^.{1,64}$","type":"Pattern","message":"名称必须为1-64位字符"}', 'views': {}}, 'id': {'name': 'id', 'translate': 'ID', 'type': 'Integer', 'required': True, 'readonly': True, 'searchable': True, 'sortable': True, 'store': True, 'views': {}}}, 'fields_views': {'search': {'id': 87, 'name': 'customer_car_model Search', 'type': 'search', 'arch': '<search string="车型">\n                <field name="name" string="名称"/>\n                <field name="carBrandId" string="车辆品牌"/>\n                <group string="分组按">\n                    <field name="groupby_carBrandId" string="车辆品牌" context="{\'group_by\': \'carBrandId\'}"/>\n                </group>\n            </search>', 'fields': {'carBrandId': {'name': 'carBrandId', 'translate': '汽车品牌', 'type': 'Many2one', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"汽车品牌不能为空"}', 'views': {}, 'relation': 'customer_car_brand'}, 'name': {'name': 'name', 'translate': '车型名称', 'type': 'Char', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"pattern":"^.{1,64}$","type":"Pattern","message":"名称必须为1-64位字符"}', 'views': {}}}, 'toolbar': {'action': [], 'print': [], 'relate': []}}, 'form': {'id': 86, 'name': 'customer_car_model Form', 'type': 'form', 'arch': '<form string="车型">\n                <sheet>\n                    <group>\n                        <group>\n                            <field name="pictureUrl" string="车型照片" widget="photo"/>\n                        </group>\n                        <group>\n                            <field name="name" string="名称"/>\n                            <field name="carBrandId" string="车辆品牌"/>\n                            <field name="companyId" attrs="{\'invisible\':[[\'id\',\'=?\']]}"/>\n                        </group>\n                    </group>\n                    <group>\n                        <group>\n                            <field name="nationalStandard" string="支持国标"/>\n                            <field name="totalBatteryCapacity" options="{\'unit\':\'kW.h\'}"/>\n                        </group>\n                        <group>\n                            <field name="bms" string="辅助电源"/>\n                            <field name="enduranceMileage" options="{\'unit\':\'km\'}"/>\n                        </group>\n                    </group>\n                </sheet>\n            </form>', 'fields': {'companyId': {'name': 'companyId', 'translate': '公司', 'type': 'Many2one', 'required': False, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'views': {}, 'relation': 'res_company'}, 'enduranceMileage': {'name': 'enduranceMileage', 'translate': '续航里程', 'type': 'Integer', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"续航里程不能为空"}', 'views': {}}, 'totalBatteryCapacity': {'name': 'totalBatteryCapacity', 'translate': '电池额度总电量', 'type': 'Float', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"电池额度总电量不能为空"}', 'views': {}}, 'carBrandId': {'name': 'carBrandId', 'translate': '汽车品牌', 'type': 'Many2one', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"汽车品牌不能为空"}', 'views': {}, 'relation': 'customer_car_brand'}, 'pictureUrl': {'name': 'pictureUrl', 'translate': '车型图片', 'type': 'Binary', 'required': False, 'readonly': False, 'searchable': False, 'sortable': False, 'store': True, 'views': {}}, 'name': {'name': 'name', 'translate': '车型名称', 'type': 'Char', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"pattern":"^.{1,64}$","type":"Pattern","message":"名称必须为1-64位字符"}', 'views': {}}, 'bms': {'name': 'bms', 'translate': 'BMS辅助电源', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"BMS辅助电源不能为空"}', 'selection': [[0, '12V'], [1, '24V']], 'views': {}}, 'nationalStandard': {'name': 'nationalStandard', 'translate': '国家标准', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"国家标准不能为空"}', 'selection': [[1, '2011'], [2, '2015'], [255, '其他']], 'views': {}}}, 'toolbar': {'action': [], 'print': [], 'relate': []}}, 'tree': {'id': 85, 'name': 'customer_car_model Tree', 'type': 'tree', 'arch': '<tree string="车型">\n                <field name="name" string="名称"/>\n                <field name="carBrandId" string="车辆品牌"/>\n                <field name="nationalStandard" string="支持国标"/>\n                <field name="totalBatteryCapacity" options="{\'unit\':\'kW.h\'}"/>\n                <field name="bms" string="辅助电源"/>\n                <field name="enduranceMileage" options="{\'unit\':\'km\'}"/>\n            </tree>', 'fields': {'enduranceMileage': {'name': 'enduranceMileage', 'translate': '续航里程', 'type': 'Integer', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"续航里程不能为空"}', 'views': {}}, 'totalBatteryCapacity': {'name': 'totalBatteryCapacity', 'translate': '电池额度总电量', 'type': 'Float', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"电池额度总电量不能为空"}', 'views': {}}, 'carBrandId': {'name': 'carBrandId', 'translate': '汽车品牌', 'type': 'Many2one', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"汽车品牌不能为空"}', 'views': {}, 'relation': 'customer_car_brand'}, 'name': {'name': 'name', 'translate': '车型名称', 'type': 'Char', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"pattern":"^.{1,64}$","type":"Pattern","message":"名称必须为1-64位字符"}', 'views': {}}, 'bms': {'name': 'bms', 'translate': 'BMS辅助电源', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"BMS辅助电源不能为空"}', 'selection': [[0, '12V'], [1, '24V']], 'views': {}}, 'nationalStandard': {'name': 'nationalStandard', 'translate': '国家标准', 'type': 'Selection', 'required': True, 'readonly': False, 'searchable': True, 'sortable': True, 'store': True, 'validation': '{"type":"NotNull","message":"国家标准不能为空"}', 'selection': [[1, '2011'], [2, '2015'], [255, '其他']], 'views': {}}}, 'toolbar': {'action': [], 'print': [], 'relate': []}}}}
+2022-04-27 17:53:51,732 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/default_get
+2022-04-27 17:53:51,732 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+2022-04-27 17:53:51,733 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:53:51,733 INFO [root] [key.py (post:20] - 内容为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 17:53:51,733 INFO [root] [key.py (default_get:70] - 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+2022-04-27 17:53:51,740 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/name_get
+2022-04-27 17:53:51,740 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_brand", "id": 77}
+2022-04-27 17:53:51,740 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:53:51,740 INFO [root] [key.py (post:20] - 内容为：{'displayName': '比亚迪', 'name': '比亚迪', 'id': 77}
+2022-04-27 17:53:51,756 INFO [root] [key.py (post:17] - 正在测试的接口是：http://192.168.1.61/api/create
+2022-04-27 17:53:51,756 INFO [root] [key.py (post:18] - 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {"displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 77}, "name": "\u6c49EV"}}
+2022-04-27 17:53:51,757 INFO [root] [key.py (post:19] - 接口返回的响应内容中的code是： 200
+2022-04-27 17:53:51,757 INFO [root] [key.py (post:20] - 内容为：108
+2022-04-27 17:53:51,757 INFO [root] [key.py (create:31] - 创建模型：customer_car_model新记录，id为：108

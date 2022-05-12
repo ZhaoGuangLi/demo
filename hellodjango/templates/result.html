@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>立牌api测试</title>
+    <style>
+	.box{
+		width:800px;
+		height:600px;
+	    margin: -200px 0 0 -250px;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	}
+    .box1{
+		width:800px;
+		height:600px;
+	    margin: -200px 0 0 -250px;
+	    position: absolute;
+	    top: 47%;
+	    left: 50%;
+	}
+</style>
+</head>
+<body>
+<div>
+    <p><span class="box1">自动化测试已经完成</span></p><br/>
+    </div>
+<div>
+<form action="reports/" method="post" class="box">{%csrf_token%}
+                <button type="submit">生成测试报告</button><br/>
+    <button type="submit">上传测试报告</button>
+</form>
+    </div>
+
+<!--<form action="reports/" method="post" class="box">{%csrf_token%}-->
+<!--                -->
+<!--</form>-->
+</body>
+</html>

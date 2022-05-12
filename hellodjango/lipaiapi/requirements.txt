@@ -1,0 +1,6 @@
+requests
+allure-pytest
+pytest
+pytest-ordering
+ddddocr
+

@@ -1,0 +1,56 @@
+[32mINFO    [0m root:key.py:115 正在测试前置获取登录验证码接口: http://192.168.1.61/api/validate/image?t=0.029693380014191195
+[32mINFO    [0m root:key.py:116 接口返回的响应头中的status_code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第1个接口: http://192.168.1.61/api/login
+[32mINFO    [0m root:key.py:22 传的参数是：{"loginCode": "admin", "plantPassword": "12345qwert", "imageCode": "HW8F"}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:125 请求登录的响应返回内容是：{"code":200,"msg":"成功","data":"eb715ddffd8c4a0d97a35c112021949e"}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第2个接口: http://192.168.1.61/api/onchange
+[32mINFO    [0m root:key.py:22 传的参数是：{"id": "", "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea"}, "method": "pinyinOnchange"}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第3个接口: http://192.168.1.61/api/create
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:35 新建：创建模型：customer_car_brand新记录，id为：1093
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第4个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car_brand", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第5个接口: http://192.168.1.61/api/read
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_brand", "fields": ["carModelIds", "companyId", "pinyin", "displayName", "name", "carModelCount", "id", "logoUrl"], "id": 1093}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:41 查看：查看模型customer_car_brand中id为：1093的内容： {'carModelIds': [], 'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'pinyin': 'BIYADI', 'displayName': '比亚迪', 'name': '比亚迪', 'carModelCount': 0, 'id': 1093, 'logoUrl': 'https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png'}
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第6个接口: http://192.168.1.61/api/onchange
+[32mINFO    [0m root:key.py:22 传的参数是：{"id": 1093, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第7个接口: http://192.168.1.61/api/write
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_brand", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49", "pinyin": "BIYADIHAN"}, "id": 1093}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:47 编辑：编辑模型customer_car_brand中id为：1093的记录已成功
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第8个接口: http://192.168.1.61/api/load_views
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "base_view", "resModel": "customer_car_brand", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第9个接口: http://192.168.1.61/api/search_read
+[32mINFO    [0m root:key.py:22 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_car_brand", "fields": ["carModelIds", "companyId", "pinyin", "displayName", "name", "carModelCount", "id", "logoUrl"], "domain": [["name", "ilike", "\u6bd4\u4e9a\u8fea\u6c49"]]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:84 快捷搜索：模型：customer_car_brand快捷搜索条件按'name'搜索 '比亚迪汉'符合的记录数是：1条
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第10个接口: http://192.168.1.61/api/unlink
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_brand", "ids": [1093]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:54 删除：已删除模型customer_car_brand中id为：1093的记录
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第11个接口: http://192.168.1.61/api/onchange
+[32mINFO    [0m root:key.py:22 传的参数是：{"id": 1093, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea"}, "method": "pinyinOnchange"}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第12个接口: http://192.168.1.61/api/create
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:35 新建：创建模型：customer_car_brand新记录，id为：1094
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第13个接口: http://192.168.1.61/api/onchange
+[32mINFO    [0m root:key.py:22 传的参数是：{"id": 1094, "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea\u6c49"}, "method": "pinyinOnchange"}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第14个接口: http://192.168.1.61/api/create
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea\u6c49", "pinyin": "BIYADIHAN"}}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:35 新建：创建模型：customer_car_brand新记录，id为：1095
+[32mINFO    [0m root:key.py:21 正在测试本组合用例中的第15个接口: http://192.168.1.61/api/unlink
+[32mINFO    [0m root:key.py:22 传的参数是：{"model": "customer_car_brand", "ids": [1094, 1095]}
+[32mINFO    [0m root:key.py:23 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:56 批量删除：已批量删除模型customer_car_brand中id为：1094, 1095的记录

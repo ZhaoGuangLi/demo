@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>立牌api测试</title>
+<style>
+	.box{
+		width:500px;
+		height:400px;
+	    margin: -200px 0 0 -250px;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	}
+</style>
+
+</head>
+<body>
+<form action="lipaiapi/" method="post" class="box">{%csrf_token%}
+                    <input name="u" type="text" placeholder="请输入账号：admin"><br>
+                    <input name="p" type="password" placeholder="请输入测试密码"><br>
+                <button type="submit">开始测试立牌api</button>
+
+</form>
+</body>
+</html>
