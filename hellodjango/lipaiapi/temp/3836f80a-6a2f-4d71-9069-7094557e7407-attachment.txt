@@ -1,0 +1,18 @@
+[32mINFO    [0m root:key.py:35 正在测试本次脚本的第1个接口: http://192.168.1.61/api/validate/image,请求方法为：get
+[32mINFO    [0m root:key.py:36 传的参数是：{'t': '0.029693380014191195'}
+[32mINFO    [0m root:key.py:37 接口返回的响应头中的status_code是： 200
+[32mINFO    [0m root:key.py:38 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:144 获取验证码成功
+[32mINFO    [0m root:key.py:145 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第2个接口: http://192.168.1.61/api/login,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"loginCode": "admin", "plantPassword": "12345qwert", "imageCode": "MS6Y"}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:151 登录成功，此次登录Authorization为：ad9f6577d44149d18deb59fdbd6ed675
+[32mINFO    [0m root:key.py:152 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:35 正在测试本次脚本的第3个接口: http://192.168.1.61/api/getUserInfo,请求方法为：get
+[32mINFO    [0m root:key.py:36 传的参数是：{'t': '2293979282149'}
+[32mINFO    [0m root:key.py:37 接口返回的响应头中的status_code是： 200
+[32mINFO    [0m root:key.py:38 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:170 此次登录的用户是：admin
+[32mINFO    [0m root:key.py:171 -----------------------------------分割线-----------------------------------

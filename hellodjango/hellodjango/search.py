@@ -11,7 +11,7 @@ def search_form(request):
 
 
 def allure_serve():
-    os.system("allure serve ./lipaiapi/temp -p 8002")
+    os.system("allure serve lipaiapi/temp -p 8002")
 
 
 def allure(request):

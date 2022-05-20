@@ -1,5 +1,8 @@
 import logging.handlers
+import os
 import time
+
+from lipaiapi.config import BASE_PATH
 
 
 class GetLogger:
@@ -12,7 +15,7 @@ class GetLogger:
             cls.logger.setLevel(logging.INFO)
             sh = logging.StreamHandler()
             th = logging.handlers.TimedRotatingFileHandler(
-                filename="./lipaiapi/log/{}.log".format(time.strftime("%Y-%m-%d")), when="midnight",
+                filename="{}log/{}.log".format(BASE_PATH + os.sep, time.strftime("%Y-%m-%d")), when="midnight",
                 interval=1, backupCount=30, encoding="utf-8")
             # ht = logging.handlers.RotatingFileHandler("./lipaiapi/log/log.log", mode="w")
             fmt = "%(asctime)s %(levelname)s [%(name)s] [%(filename)s (%(funcName)s:%(lineno)d] - %(message)s"

@@ -1,12 +1,14 @@
 import lipaiapi.model
 from lipaiapi.key.key import Key
-from lipaiapi.model.customer_car_brand import CustomerCarBrand
-from lipaiapi.utility.common import dict_key, update_dict
+from lipaiapi.utility.common import update_dict
+from lipaiapi.model.model_setting import ModelSetting
 
 
 class CustomerCard(Key):
+    setting = ModelSetting()
     customer_card_id = ""
     cardModelId_displayName = ""
+    fields = ""
     cardModelId_code = ""
     cardModelId_number = ""
     ids_list = []
@@ -17,7 +19,7 @@ class CustomerCard(Key):
         self.cardModelId_code = create_code
         dict1 = self.customer_card_default_get()
         dict2 = {"cardNo": create_card_number, "name": create_name, "code": create_code}
-        data = {"model": lipaiapi.model.customer_card_model,
+        data = {"model": self.setting.load_data["resModel"],
                 "map": update_dict(dict1, dict2)}
         resp = self.create(data)
         self.customer_card_id = resp.json()["data"]
@@ -27,54 +29,50 @@ class CustomerCard(Key):
         self.cardModelId_number = edit_card_number
         self.cardModelId_displayName = edit_name
         self.cardModelId_code = edit_code
-        data = {"model": lipaiapi.model.customer_card_model,
+        data = {"model": self.setting.load_data["resModel"],
                 "map": {"cardNo": edit_card_number, "name": edit_name, "code": edit_code},
                 "id": self.customer_card_id}
         resp = self.edit(data)
 
     def delete_customer_card(self, *args):
-        data = {"model": lipaiapi.model.customer_card_model,
+        data = {"model": self.setting.load_data["resModel"],
                 "ids": [*args]}
         resp = self.delete(data)
 
-    def customer_card_fields(self):
-        data = {"model": lipaiapi.model.base_view_model, "resModel": lipaiapi.model.customer_card_model,
-                "kwargs": {"context": {"lang": "zh_CN"},
-                           "views": [[False, "tree"], [False, "form"], [False, "search"]]}}
-        resp = self.load_views(data)
-        fields_dict = resp.json()["data"]["fields"]
-        fields = dict_key(fields_dict)
-        return fields
+    def customer_card_fields(self, call_name):
+        self.setting.get_fields(call_name)
+        return self.setting.fields
 
     def read_customer_card(self):
-        data = {"model": lipaiapi.model.customer_card_model,
-                "fields": self.customer_card_fields(),
+        data = {"model": self.setting.load_data["resModel"],
+                "fields": self.fields,
                 "id": self.customer_card_id}
         resp = self.read(data)
 
     def customer_card_default_get(self):
-        data = {"model": lipaiapi.model.customer_card_model, "fields": self.customer_card_fields(), "context": {}}
+        data = {"model": self.setting.load_data["resModel"], "fields": self.fields, "context": {}}
         resp = self.default_get(data)
         return resp.json()["data"]
 
     def customer_card_name(self):
-        resp = self.name_get(lipaiapi.model.customer_card_model, self.customer_card_id)
+        resp = self.name_get(self.setting.load_data["resModel"], self.customer_card_id)
         return resp.json()["data"]
 
     def customer_card_search_read(self, condition, *args):
-        dict2 = {"model": lipaiapi.model.customer_card_model, "fields": self.customer_card_fields(),
+        dict2 = {"model": self.setting.load_data["resModel"], "fields": self.fields,
                  "domain": [[condition, "like", *args]]}
         data = update_dict(lipaiapi.model.search_read_dict, dict2)
         resp = self.search_read(data)
 
     def customer_car_brand_read_group(self, condition):
-        dict2 = {"model": lipaiapi.model.customer_card_model, "domain": [],
-                 "fields": self.customer_card_fields(),  "group": [condition]}
+        dict2 = {"model": self.setting.load_data["resModel"], "domain": [],
+                 "fields": self.fields,  "group": [condition]}
         data = update_dict(lipaiapi.model.read_group_dict, dict2)
         resp = self.read_group(data)
 
-    def customer_card_process(self, create_card_number, create_name, create_code, edit_card_number, edit_name,
-                              edit_code):
+    def customer_card_process(self, call_name, create_card_number, create_name, create_code, edit_card_number,
+                              edit_name, edit_code):
+        self.fields = self.customer_card_fields(call_name)
         self.create_customer_card(create_card_number, create_name, create_code)
         self.read_customer_card()
         self.edit_customer_card(edit_card_number, edit_name, edit_code)

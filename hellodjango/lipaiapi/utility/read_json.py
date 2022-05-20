@@ -1,13 +1,16 @@
 import json
+import os
 from time import sleep
+
+from lipaiapi.config import BASE_PATH
 from lipaiapi.utility.getlogger import GetLogger
 
 
 log = GetLogger().get_logger()
 
 
-def read_json_items_value(file):
-    with open(file, encoding="utf-8") as f:
+def read_json_items_value(file_name):
+    with open(file_name, encoding="utf-8") as f:
         result = json.load(f)
         list1 = []
         for i in result:
@@ -28,8 +31,9 @@ def read_json_items_key(file):
             return tuple(list1)
 
 
-def read_json(file):
-    with open(file, encoding="utf-8") as f:
+def read_json(file_name):
+    file_path = BASE_PATH + os.sep + "data" + os.sep + file_name
+    with open(file_path, encoding="utf-8") as f:
         result = json.load(f)
         return result
 

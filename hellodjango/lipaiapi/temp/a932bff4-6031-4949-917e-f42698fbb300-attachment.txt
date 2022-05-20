@@ -1,0 +1,124 @@
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第19个接口: http://192.168.1.61/api/onchange,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"id": "", "model": "customer_car_brand", "field": "name", "map": {"name": "\u6bd4\u4e9a\u8fea"}, "method": "pinyinOnchange"}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第20个接口: http://192.168.1.61/api/create,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_brand", "map": {"logoUrl": "https://test3.gcevc.net/oss/customer_car_brand/logoUrl/1651026599188.png", "name": "\u6bd4\u4e9a\u8fea", "pinyin": "BIYADI"}}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:50 新建：创建模型：customer_car_brand新记录，id为：1341
+[32mINFO    [0m root:key.py:51 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:35 正在测试本次脚本的第21个接口: http://192.168.1.61/api/call,请求方法为：get
+[32mINFO    [0m root:key.py:36 传的参数是：{'lang': 'zh_CN', 't': '4446373693481'}
+[32mINFO    [0m root:key.py:37 接口返回的响应头中的status_code是： 200
+[32mINFO    [0m root:key.py:38 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:157 请求平台的模型结构成功
+[32mINFO    [0m root:key.py:158 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:35 正在测试本次脚本的第22个接口: http://192.168.1.61/api/load,请求方法为：get
+[32mINFO    [0m root:key.py:36 传的参数是：{'model': 'ir_actions_act_window', 'actionId': '33'}
+[32mINFO    [0m root:key.py:37 接口返回的响应头中的status_code是： 200
+[32mINFO    [0m root:key.py:38 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:163 呈现客户管理-车型模型
+[32mINFO    [0m root:key.py:164 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第23个接口: http://192.168.1.61/api/load_views,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "base_view", "resModel": "customer_car_model", "kwargs": {"context": {"lang": "zh_CN"}, "views": [[false, "tree"], [false, "form"], [false, "search"]]}}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:93 渲染模型customer_car_model的视图views
+[32mINFO    [0m root:key.py:94 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第24个接口: http://192.168.1.61/api/default_get,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:100 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+[32mINFO    [0m root:key.py:101 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第25个接口: http://192.168.1.61/api/name_get,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_brand", "id": 1341}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第26个接口: http://192.168.1.61/api/create,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {"displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 1341}, "name": "\u6c49EV"}}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:50 新建：创建模型：customer_car_model新记录，id为：1107
+[32mINFO    [0m root:key.py:51 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第27个接口: http://192.168.1.61/api/read,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "id": 1107}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:57 查看：查看模型customer_car_model中id为：1107的内容： {'companyId': {'displayName': 'hx', 'name': 'hx', 'id': 1}, 'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'carBrandId': {'displayName': '比亚迪', 'name': '比亚迪', 'id': 1341}, 'displayName': '汉EV', 'pictureUrl': 'https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png', 'name': '汉EV', 'bms': 1, 'id': 1107, 'nationalStandard': 255}
+[32mINFO    [0m root:key.py:58 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第28个接口: http://192.168.1.61/api/write,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_model", "map": {"name": "\u6c49EV\u65d7\u8230\u7248"}, "id": 1107}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:64 编辑：编辑模型customer_car_model中id为：1107的记录已成功
+[32mINFO    [0m root:key.py:65 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第29个接口: http://192.168.1.61/api/search_read,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "domain": [["name", "like", "\u6c49EV\u65d7\u8230\u7248"]]}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:107 快捷搜索：模型：customer_car_model快捷搜索条件按'name'搜索 '汉EV旗舰版'符合的记录数是：1条
+[32mINFO    [0m root:key.py:111 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第30个接口: http://192.168.1.61/api/search_read,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"offset": 1, "limit": 20, "sort": "", "model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "domain": [["carBrandId.displayName", "like", "\u6bd4\u4e9a\u8fea"]]}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:107 快捷搜索：模型：customer_car_model快捷搜索条件按'carBrandId.displayName'搜索 '比亚迪'符合的记录数是：34条
+[32mINFO    [0m root:key.py:111 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第31个接口: http://192.168.1.61/api/read_group,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"lazy": true, "orderBy": "", "simple": false, "limit": 20, "offset": 1, "model": "customer_car_model", "domain": [], "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "group": ["carBrandId"]}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:117 分组：模型：customer_car_model按'carBrandId'分组，响应内容中的data为：{'records': [{'_domain': [['carBrandId', '=', 1341]], '_total': 1, 'carBrandId': {'displayName': '比亚迪', 'name': '比亚迪', 'id': 1341}}, {'_domain': [['carBrandId', '=', 1]], '_total': 2, 'carBrandId': {'displayName': '奥迪', 'name': '奥迪', 'id': 1}}, {'_domain': [['carBrandId', '=', 47]], '_total': 24, 'carBrandId': {'displayName': '长城', 'name': '长城', 'id': 47}}, {'_domain': [['carBrandId', '=', 14]], '_total': 1, 'carBrandId': {'displayName': '宝马', 'name': '宝马', 'id': 14}}, {'_domain': [['carBrandId', '=', 2]], '_total': 33, 'carBrandId': {'displayName': '比亚迪', 'name': '比亚迪', 'id': 2}}], 'length': 5}
+[32mINFO    [0m root:key.py:120 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第32个接口: http://192.168.1.61/api/unlink,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_model", "ids": [1107]}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:72 删除：已删除模型customer_car_model中id为：1107的记录
+[32mINFO    [0m root:key.py:73 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第33个接口: http://192.168.1.61/api/default_get,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:100 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+[32mINFO    [0m root:key.py:101 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第34个接口: http://192.168.1.61/api/name_get,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_brand", "id": 1341}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第35个接口: http://192.168.1.61/api/create,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {"displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 1341}, "name": "\u6c49EV"}}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:50 新建：创建模型：customer_car_model新记录，id为：1108
+[32mINFO    [0m root:key.py:51 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第36个接口: http://192.168.1.61/api/default_get,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_model", "fields": ["enduranceMileage", "totalBatteryCapacity", "carBrandId", "displayName", "pictureUrl", "bms", "nationalStandard", "companyId", "name", "id"], "context": {}}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:100 模型：customer_car_model的默认填充字段信息为：{'enduranceMileage': 0, 'totalBatteryCapacity': 0.0, 'bms': 1, 'nationalStandard': 255}
+[32mINFO    [0m root:key.py:101 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第37个接口: http://192.168.1.61/api/name_get,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_brand", "id": 1341}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第38个接口: http://192.168.1.61/api/create,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_model", "map": {"enduranceMileage": 0, "totalBatteryCapacity": 0.0, "bms": 1, "nationalStandard": 255, "pictureUrl": "https://test3.gcevc.net/oss/customer_car_model/pictureUrl/1651041717176.png", "carBrandId": {"displayName": "\u6bd4\u4e9a\u8fea", "name": "\u6bd4\u4e9a\u8fea", "id": 1341}, "name": "\u6c49EV\u65d7\u8230\u7248"}}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:50 新建：创建模型：customer_car_model新记录，id为：1109
+[32mINFO    [0m root:key.py:51 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第39个接口: http://192.168.1.61/api/unlink,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_model", "ids": [1108, 1109]}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:75 批量删除：已批量删除模型customer_car_model中id为：1108, 1109的记录
+[32mINFO    [0m root:key.py:77 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:18 正在测试本次脚本的第40个接口: http://192.168.1.61/api/unlink,请求方法为：post
+[32mINFO    [0m root:key.py:19 传的参数是：{"model": "customer_car_brand", "ids": [1341]}
+[32mINFO    [0m root:key.py:20 接口返回的响应内容中的code是： 200
+[32mINFO    [0m root:key.py:21 -----------------------------------分割线-----------------------------------
+[32mINFO    [0m root:key.py:72 删除：已删除模型customer_car_brand中id为：1341的记录
+[32mINFO    [0m root:key.py:73 -----------------------------------分割线-----------------------------------

@@ -2,11 +2,14 @@ import lipaiapi.model
 from lipaiapi.key.key import Key
 from lipaiapi.model.customer_car_model import CustomerCarModel
 from lipaiapi.utility.common import dict_key, update_dict
+from lipaiapi.model.model_setting import ModelSetting
 
 
 class CustomerCar(Key):
     customer_car_model = CustomerCarModel()
+    setting = ModelSetting()
     customer_car_id = ""
+    fields = ""
     customer = "zhao_test"
     ids_list = []
 
@@ -15,56 +18,53 @@ class CustomerCar(Key):
         dict2 = {"carModelId": self.customer_car_model.customer_car_model_name(), "customerId": {},
                  "number": create_number, "remark": create_remark, "vin": create_vin,
                  "pictureUrl": "https://test3.gcevc.net/oss/customer_car/pictureUrl/1651051712594.png"}
-        data = {"model": lipaiapi.model.model_customer_car,
+        data = {"model": self.setting.load_data["resModel"],
                 "map": update_dict(dict1, dict2)}
         resp = self.create(data)
         self.customer_car_id = resp.json()["data"]
         self.ids_list.append(resp.json()["data"])
 
     def edit_customer_car(self, edit_number, edit_remark, edit_vin):
-        data = {"model": lipaiapi.model.model_customer_car,
+        data = {"model": self.setting.load_data["resModel"],
                 "map": {"number": edit_number, "remark": edit_remark, "vin": edit_vin}, "id": self.customer_car_id}
         resp = self.edit(data)
 
     def delete_customer_car(self, *args):
-        data = {"model": lipaiapi.model.model_customer_car,
+        data = {"model": self.setting.load_data["resModel"],
                 "ids": [*args]}
         resp = self.delete(data)
 
-    def customer_car_fields(self):
-        data = {"model": lipaiapi.model.base_view_model, "resModel": lipaiapi.model.model_customer_car,
-                "kwargs": {"context": {"lang": "zh_CN"}, "views": [[False, "tree"], [False, "form"], [False, "search"]]}}
-        resp = self.load_views(data)
-        fields_dict = resp.json()["data"]["fields"]
-        fields = dict_key(fields_dict)
-        return fields
+    def customer_car_fields(self, call_name):
+        self.setting.get_fields(call_name)
+        return self.setting.fields
 
     def read_customer_car(self):
-        data = {"model": lipaiapi.model.model_customer_car,
-                "fields": self.customer_car_fields(),
+        data = {"model": self.setting.load_data["resModel"],
+                "fields": self.fields,
                 "id": self.customer_car_id}
         resp = self.read(data)
 
     def customer_car_default_get(self):
-        data = {"model": lipaiapi.model.model_customer_car, "fields": self.customer_car_fields(), "context": {}}
+        data = {"model": self.setting.load_data["resModel"], "fields": self.fields, "context": {}}
         resp = self.default_get(data)
         return resp.json()["data"]
 
     def customer_car_search_read(self, condition, *args):
-        dict2 = {"model": lipaiapi.model.model_customer_car, "fields": self.customer_car_fields(),
+        dict2 = {"model": self.setting.load_data["resModel"], "fields": self.fields,
                  "domain": [[condition, "like", *args]]}
         data = update_dict(lipaiapi.model.search_read_dict, dict2)
         resp = self.search_read(data)
 
     def customer_car_read_group(self, condition):
-        dict2 = {"model": lipaiapi.model.model_customer_car, "domain": [],
-                 "fields": self.customer_car_fields(),  "group": [condition]}
+        dict2 = {"model": self.setting.load_data["resModel"], "domain": [],
+                 "fields": self.fields,  "group": [condition]}
         data = update_dict(lipaiapi.model.read_group_dict, dict2)
         resp = self.read_group(data)
 
-    def customer_car_process(self, customer_brand_name, customer_model_name, create_number, create_remark, create_vin,
+    def customer_car_process(self, call_name, customer_brand_name, customer_model_name, create_number, create_remark, create_vin,
                              edit_number, edit_remark, edit_vin):
         self.customer_car_model.create_customer_car_model_process(customer_brand_name, customer_model_name)
+        self.fields = self.customer_car_fields(call_name)
         self.create_customer_car(create_number, create_remark, create_vin)
         self.read_customer_car()
         self.edit_customer_car(edit_number, edit_remark, edit_vin)

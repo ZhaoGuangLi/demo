@@ -49,6 +49,16 @@ def generate_customer_name():
     return name
 
 
+def random_num():
+    """
+    生成随机13位数组成的字符串
+    :return: 返回生成的字符串
+    """
+    seq = "0123456789"
+    num = ""
+    for i in range(13):
+        num = num + str(random.choice(seq))
+    return num
 
 
 

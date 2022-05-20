@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/lipaiapi/reports/history" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lipaiapi/reports/plugins" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lipaiapi/reports/widgets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lipaiapi/model" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

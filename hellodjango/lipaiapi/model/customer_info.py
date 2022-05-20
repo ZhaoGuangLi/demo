@@ -2,9 +2,12 @@ import random
 import lipaiapi.model
 from lipaiapi.key.key import Key
 from lipaiapi.utility.common import dict_key, update_dict, generate_customer_name, generate_phone_number
+from lipaiapi.model.model_setting import ModelSetting
 
 
 class CustomerInfo(Key):
+    setting = ModelSetting()
+    fields = ""
     customer_info_id = ""
     customerId_displayName = ""
     customerId_phone = ""
@@ -15,14 +18,14 @@ class CustomerInfo(Key):
         self.customerId_phone = generate_phone_number()
         dict1 = self.customer_info_default_get()
         dict2 = {"name": self.customerId_displayName, "phone": self.customerId_phone, "sex": random.randint(0, 2)}
-        data = {"model": lipaiapi.model.customer_info_model, "map": update_dict(dict1, dict2)}
+        data = {"model": self.setting.load_data["resModel"], "map": update_dict(dict1, dict2)}
         resp = self.create(data)
         self.customer_info_id = resp.json()["data"]
 
     def edit_customer_info(self):
         self.customerId_displayName = generate_customer_name()
         self.customerId_phone = generate_phone_number()
-        data = {"model": lipaiapi.model.customer_info_model,
+        data = {"model": self.setting.load_data["resModel"],
                 "map": {"name": self.customerId_displayName, "phone": self.customerId_phone},
                 "id": self.customer_info_id}
         resp = self.edit(data)
@@ -33,47 +36,44 @@ class CustomerInfo(Key):
         :param customer_id:客户Id
         :return:创建框选择客户时所需的字段
         """
-        resp = self.name_get(lipaiapi.model.customer_info_model, customer_id)
+        resp = self.name_get(self.setting.load_data["resModel"], customer_id)
         return resp.json()["data"]
 
-    def customer_info_fields(self):
-        data = {"model": lipaiapi.model.base_view_model, "resModel": lipaiapi.model.customer_info_model,
-                "kwargs": {"context": {"lang": "zh_CN"}, "views": [[97, "tree"], [98, "form"], [99, "search"]]}}
-        resp = self.load_views(data)
-        fields_dict = resp.json()["data"]["fields"]
-        fields = dict_key(fields_dict)
-        return fields
+    def customer_info_fields(self, call_name):
+        self.setting.get_fields(call_name)
+        return self.setting.fields
 
     def read_customer_info(self, _id):
-        data = {"model": lipaiapi.model.customer_info_model,
-                "fields": self.customer_info_fields(),
+        data = {"model": self.setting.load_data["resModel"],
+                "fields": self.fields,
                 "id": _id}
         resp = self.read(data)
 
     def customer_info_search_read(self, condition, *args):
-        dict2 = {"model": lipaiapi.model.customer_info_model, "fields": self.customer_info_fields(),
+        dict2 = {"model": self.setting.load_data["resModel"], "fields": self.fields,
                  "domain": [[condition, "ilike", *args]]}
         data = update_dict(lipaiapi.model.search_read_dict, dict2)
         resp = self.search_read(data)
 
     def customer_info_default_get(self):
-        data = {"model": lipaiapi.model.customer_info_model,
-                "fields": self.customer_info_fields(), "context": {"default_type": 0}}
+        data = {"model": self.setting.load_data["resModel"],
+                "fields": self.fields, "context": {"default_type": 0}}
         resp = self.default_get(data)
         return resp.json()["data"]
 
     def customer_info_read_group(self, condition):
-        dict2 = {"model": lipaiapi.model.customer_info_model, "domain": [],
-                 "fields": self.customer_info_fields(),  "group": [condition]}
+        dict2 = {"model": self.setting.load_data["resModel"], "domain": [],
+                 "fields": self.fields,  "group": [condition]}
         data = update_dict(lipaiapi.model.read_group_dict, dict2)
         resp = self.read_group(data)
 
     def customer_info_call_method(self, button):
-        data = {"model": lipaiapi.model.customer_info_model, "method": button,
+        data = {"model": self.setting.load_data["resModel"], "method": button,
                 "args": [[self.customer_info_id], {}]}
         resp = self.call_method(data, self.customer_info_id)
 
-    def customer_process(self):
+    def customer_process(self, call_name):
+        self.fields = self.customer_info_fields(call_name)
         self.create_customer_info()
         self.read_customer_info(self.customer_info_id)
         self.edit_customer_info()
